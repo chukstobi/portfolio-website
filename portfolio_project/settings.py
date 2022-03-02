@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 
 # Application definition
@@ -36,8 +35,6 @@ CKEDITOR_UPLOAD_PATH = 'uploads/'
 INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
     'taggit',
-    'ckeditor',
-    'ckeditor_uploader',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
