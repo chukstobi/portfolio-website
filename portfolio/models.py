@@ -84,3 +84,12 @@ class Certification(models.Model):
 
     def __str__(self):
         return self.course_name
+
+class Contact(models.Model):
+    name = models.CharField(max_length=1000)
+    email = models.EmailField()
+    subject = models.CharField(max_length=1000)
+    message = models.TextField()
+
+    def __str__(self):
+        return f"{self.name} - {self.subject}"
